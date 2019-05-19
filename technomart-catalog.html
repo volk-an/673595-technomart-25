@@ -54,20 +54,38 @@
       <h1 class="inner-page-header">Перфораторы</h1>
       <section class="filters">
         <h2>Фильтр:</h2>
-        <form class="catalog-filters">
+        <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul class="brand-filter">
+              <li><label><input type="checkbox" name="bosh">Bosh</label></li>
+              <li><label><input type="checkbox" name="Interskol">Интерскол</label></li>
+              <li><label><input type="checkbox" name="makita">Makita</label></li>
+              <li><label><input type="checkbox" name="DeWalt">DeWalt</label></li>
+              <li><label><input type="checkbox" name="Hitachi">Hitachi</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul class="power-filter">
+              <li><label><input type="radio" name="power">Аккумуляторные</label></li>
+              <li><label><input type="radio" name="power">Сетевые</label></li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
         <p class="sort">Сортировка:</p>
         <ul class="catalog-sort">
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По функционалу</li>
+          <li><a class="sort-item sort-item-current">По цене</a></li>
+          <li><a class="sort-item" href="#">По типу</a></li>
+          <li><a class="sort-item" href="#">По функционалу</a></li>
         </ul>
         <ul class="catalog-list">
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 3000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_3000.jpg);
@@ -84,7 +102,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 6000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_6000.jpg);
@@ -101,7 +119,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item new-item" href="#">
+            <a class="catalog-item new-item" href="#" aria-label="Перфоратор BOSCH BFG 2000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_2000.jpg);
@@ -114,7 +132,7 @@
             </a>
           </li>
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 3000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_3000.jpg);
@@ -131,7 +149,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 6000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_6000.jpg);
@@ -148,7 +166,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item new-item" href="#">
+            <a class="catalog-item new-item" href="#" aria-label="Перфоратор BOSCH BFG 2000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_2000.jpg);
@@ -165,7 +183,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 3000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_3000.jpg);
@@ -182,7 +200,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item new-item" href="#">
+            <a class="catalog-item new-item" href="#" aria-label="Перфоратор BOSCH BFG 6000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_6000.jpg);
@@ -199,7 +217,7 @@
             </div>
           </li>
           <li>
-            <a class="catalog-item" href="#">
+            <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 2000">
               <div class="item=image" style="width: 218px;
                                             height: 170px;
                                             background-image: url(img/BOSCH_BFG_2000.jpg);
