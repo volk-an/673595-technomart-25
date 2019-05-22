@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+
+  font-family: Cuprum, Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  background-color: #f3f7f9;
+
+}
+.top-menu {
+  width: 1280px;
+  min-height: 42px;
+
+  background-color: #293449;
+}
+.top-menu a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+}
+.order-button {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+.site-header {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  font-weight: 400;
+
+  color: #ee3643;
+}
+.phone-number {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ee3643;
+}
+.nav-address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
+.login-menu {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+
+  list-style: none;
+}
+.site-navigation {
+  list-style: none;
+
+  background-color: #293449;
+}
+.navigation-item a {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #ffffff;
+}
+.promo-option {
+  }
+.materials {
+  background-color: #ffbf47;
+}
+.instrument {
+  background-color: #3bbce3;
+}
+.technics {
+  background-color: #dc91d8;
+}
+.discount {
+  background-color: #8ed78f;
+}
+.delivery {
+  background-color: #ffbf47;
+}
+.promo-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.promo-button {
+  width: 135px;
+  min-height: 38px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #000000;
+  opacity: 0.1;
+}
+.slider {
+  width: 620px;
+  min-height: 266px;
+
+  color: #ffffff;
+  background-color: #685b52
+}
+.slider-1 {
+  background-image: url("../img/drill.png");
+}
+.slider-2 {
+  background-image: url("../img/perforator.png");
+}
+.slider-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.slider-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.popular-wrap {
+  width: 940px;
+  min-height: 89px;
+  background-color: #f9f5f0;
+}
+.popular-items-header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.catalog-list {
+  list-style: none;
+}
+.catalog-list li {
+  width: 220px;
+  min-height: 318px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+.catalog-item-header {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+.old-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+.new-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.add-to-cart {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #63a63e;
+  
+}
+.add-to-bookmarks
