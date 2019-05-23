@@ -11,7 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="top-menu">
-          <a class="main-logo">Техномарт</a>
+          <a class="main-logo"><img src="img/svg-technomart/logo-technomart.svg"></a>
           <input class="search" value="Поиск">
           <a class="bookmarks" href="#">Закладки:0</a>
           <a class="cart" href="#">Корзина:0</a>
@@ -77,22 +77,22 @@
         <div class="slider slider-1">
           <h3 class="slider-title">Дрели</h3>
           <p class="slider-text">Соседям на радость!</p>
-          <a class="slider-button" href="technomart-catalog.html">Открыть каталог</a>
+          <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
           <button aria-label="влево"></button>
           <button aria-label="вправо"></button>
         </div>
         <div class="slider slider-2">
           <h3 class="slider-title">Перфораторы</h3>
           <p class="slider-text">Настоящие мужские игрушки</p>
-          <a class="slider-button" href="technomart-catalog.html">Открыть каталог</a>
+          <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
           <button aria-label="влево"></button>
           <button aria-label="вправо"></button>
         </div>
       </section>
       <section class="popular-items">
         <div class="popular-wrap">
-          <h2 class="popular-items-header">Популярные товары:</h2>
-          <a class="all-popular-items button" href="#">Все популярные товары</a>
+          <h2 class="popular-header">Популярные товары:</h2>
+          <a class="popular-button red-button" href="#">Все популярные товары</a>
         </div>
         <ul class="catalog-list">
           <li>
@@ -165,46 +165,48 @@
         </ul>
       </section>
       <section class="popular-brands">
-        <h2 class="brands-header">Популяпные производители:</h2>
-        <a class="all-brands button">Все производители</a>
-        <ul>
-          <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт BOSCH">
+        <div class="popular-wrap">
+          <h2 class="popular-header">Популярные производители:</h2>
+          <a class="popular-button red-button" href="#">Все производители</a>
+        </div>
+        <ul class="popular-brands-list">
+          <li>
+            <a class="brand-item" href="#" aria-label="каталог BOSCH">
               <img class="brand-logo" src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт Makita">
+            <a class="brand-item" href="#" aria-label="каталог Makita">
               <img class="brand-logo" src="img/Makita.jpg" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт DeWalt">
+            <a class="brand-item" href="#" aria-label="каталог DeWalt">
               <img class="brand-logo" src="img/Dewalt.jpg" width="146" height="44" alt="DeWalt">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт Интерскол">
+            <a class="brand-item" href="#" aria-label="каталог Интерскол">
               <img class="brand-logo" src="img/Interskol.jpg" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт Hitachi">
+            <a class="brand-item" href="#" aria-label="каталог Hitachi">
               <img class="brand-logo" src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт LG">
+            <a class="brand-item" href="#" aria-label="каталог LG">
               <img class="brand-logo" src="img/LG.jpg" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт AEG">
+            <a class="brand-item" href="#" aria-label="каталог AEG">
               <img class="brand-logo" src="img/AEG.jpg" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="popular-brand">
-            <a class="brand-item" href="#" aria-label="сайт Metabo">
+            <a class="brand-item" href="#" aria-label="каталог Metabo">
               <img class="brand-logo" src="img/Metabo.jpg" width="204" height="69" alt="Metabo">
             </a>
           </li>
@@ -214,25 +216,25 @@
         <h2 class="service-header">Сервисы</h2>
         <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="service-list">
-          <li class="service-item service-item-current">Доставка</li>
-          <li class="service-item">Гарантия</li>
-          <li class="service-item">Кредит</li>
+          <li><button class="service-item service-item-current">Доставка</button></li>
+          <li><button class="service-item">Гарантия</button></li>
+          <li><button class="service-item">Кредит</button></li>
         </ul>
-        <section  class="service-slide">
+        <section  class="service-slide delivery-slide">
           <h3 class="service-name">Доставка</h3>
           <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </section>
-        <section  class="service-slide">
+        <section  class="service-slide guarantee-slide">
           <h3 class="service-name">Гарантия</h3>
           <p class="service-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
         </section>
-        <section  class="service-slide">
+        <section  class="service-slide credit-slide">
           <h3 class="service-name">Кредит</h3>
           <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
         </section>
       </section>
       <section class="technomart-info">
-        <h2 class="info-header">КОМПАНИЯ «Техномарт»</h2>
+        <h2 class="info-header">Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
         <ul class="carrier-list">
@@ -240,13 +242,13 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about-link button" href="#">Подробнее о компании</a>
+        <a class="about-link red-button" href="#">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-header">Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <img class="map" src="img/map.jpg" width="300" height="158" alt="фрагмент карты">
-        <a href="#" class="button">Напишите нам</a>
+        <a href="#" class="red-button">Напишите нам</a>
       </section>
       <section class="modal feedback-modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -257,12 +259,12 @@
           <input type="email" name="email" id="email-input" placeholder="email@example.com">
           <label for="message-input">Текст письма:</label>
           <input type="text" name="message" id="message-input" placeholder="В свободной форме">
-          <button>Отправить</button>
+          <button class="red-button form-send">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
-      <a class="footer-logo">Техномарт</a>
+      <a class="footer-logo"><img src="img/svg-technomart/logo-technomart.svg"></a>
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>+7(812)555-05-55</p>
       <ul class="footer-nav">
         <li>
@@ -293,20 +295,22 @@
           <a class="footer-nav-item nav-yellow" href="#">Спецпредложения</a>
         </li>
       </ul>
-      <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <ul class="footer-social">
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт Вконтакте">VK</a>
-        </li>
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт В Фейсбуке">FB</a>
-        </li>
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт в Инстаграме">I</a>
-        </li>
-      </ul>
-      <p class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p class="developer">Разработано<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <ul class="footer-social">
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт Вконтакте">VK</a>
+          </li>
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт В Фейсбуке">FB</a>
+          </li>
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт в Инстаграме">I</a>
+          </li>
+        </ul>
+        <p class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="developer">Разработано<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+      </div>
     </footer>
   </body>
 </html>

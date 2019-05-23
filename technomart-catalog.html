@@ -10,19 +10,23 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-logo" href="index.html">Техномарт</a>
-        <input class="search" value="Поиск">
-        <a class="bookmarks" href="#">Закладки:0</a>
-        <a class="cart-full" href="#">Корзина:10</a>
-        <a class="order-button" href="#">Оформить заказ</a>
+        <div class="top-menu">
+          <a class="main-logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg"></a>
+          <input class="search" value="Поиск">
+          <a class="bookmarks" href="#">Закладки:0</a>
+          <a class="cart-full" href="#">Корзина:10</a>
+          <a class="order-button" href="#">Оформить заказ</a>
+        </div>
         <h1 class="site-header">Интернет-магазин строительных материалов и инструментов для дома</h1>
         <div class="contacts">
           <p class="phone-number">+7(812)555-05-55</p>
           <p class="address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         </div>
-        <p class="user-name">Равшан Джамшутович</p>
-        <a class="orders" href="#">Мои заказы</a>
-        <a class="account" href="#">Личный кабинет</a>
+        <div class="user-menu">
+          <p class="user-name">Равшан Джамшутович</p>
+          <a class="orders" href="#">Мои заказы</a>
+          <a class="account" href="#">Личный кабинет</a>
+        </div>
         <ul class="site-navigation">
           <li class="navigation-item">
             <a href="#">Главная</a>
@@ -59,7 +63,7 @@
         <h2>Фильтр:</h2>
         <form class="catalog-filters" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Производители:</legend>
+            <legend class="filter-name">Производители:</legend>
             <ul class="brand-filter">
               <li><label><input type="checkbox" name="bosh">Bosh</label></li>
               <li><label><input type="checkbox" name="Interskol">Интерскол</label></li>
@@ -69,7 +73,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Питание:</legend>
+            <legend class="filter-name">Питание:</legend>
             <ul class="power-filter">
               <li><label><input type="radio" name="power">Аккумуляторные</label></li>
               <li><label><input type="radio" name="power">Сетевые</label></li>
@@ -80,12 +84,14 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
-        <p class="sort">Сортировка:</p>
-        <ul class="catalog-sort">
-          <li><a class="sort-item sort-item-current">По цене</a></li>
-          <li><a class="sort-item" href="#">По типу</a></li>
-          <li><a class="sort-item" href="#">По функционалу</a></li>
-        </ul>
+        <section class="sort-menu">
+          <h3 class="sort-item">Сортировка:</h3>
+          <ul class="sort-list">
+            <li><a class="sort-item sort-item-current">По цене</a></li>
+            <li><a class="sort-item" href="#">По типу</a></li>
+            <li><a class="sort-item" href="#">По функционалу</a></li>
+          </ul>
+        </section>
         <ul class="catalog-list">
           <li>
             <a class="catalog-item" href="#" aria-label="Перфоратор BOSCH BFG 3000">
@@ -244,14 +250,14 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
-      <article class="tool-info">
-        <h2 class="tool-info-header">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <article class="tools-info">
+        <h2 class="tools-info-header">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </article>
     </main>
     <footer class="main-footer">
-      <a class="footer-logo" href="index.html">Техномарт</a>
+      <a class="footer-logo"><img src="img/svg-technomart/logo-technomart.svg"></a>
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>+7(812)555-05-55</p>
       <ul class="footer-nav">
         <li>
@@ -282,26 +288,30 @@
           <a class="footer-nav-item nav-yellow" href="#">Спецпредложения</a>
         </li>
       </ul>
-      <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <ul class="footer-social">
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт Вконтакте">VK</a>
-        </li>
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт В Фейсбуке">FB</a>
-        </li>
-        <li class="social-button">
-          <a href="#" aria-label="Техномарт в Инстаграме">I</a>
-        </li>
-      </ul>
-      <p class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <p class="developer">Разработано<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+        <ul class="footer-social">
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт Вконтакте">VK</a>
+          </li>
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт В Фейсбуке">FB</a>
+          </li>
+          <li class="social-button">
+            <a href="#" aria-label="Техномарт в Инстаграме">I</a>
+          </li>
+        </ul>
+        <p class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <p class="developer">Разработано<a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+      </div>
     </footer>
     <section class="modal cart-info">
       <h2 class="visually-hidden">Информационное окно</h2>
-      <b>Товар добавлен в корзину</b>
-      <a class="button-modal" href="#">Оформить заказ</a>
-      <a class="button-modal" href="#">Продолжить покупки</a>
+      <b>Товар добавлен в корзину!</b>
+      <div class="cart-info-buttons">
+        <a class="button-modal red-button" href="#">Оформить заказ</a>
+        <a class="button-modal white-button" href="#">Продолжить покупки</a>
+      </div>
     </section>
   </body>
 </html>
