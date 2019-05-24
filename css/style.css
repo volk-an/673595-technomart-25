@@ -23,9 +23,12 @@ a {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+
   color: #ffffff;
+  background-color: #293449;
 }
-.order-button {
+
+a.order-button {
   color: #ffffff;
 
   background-color: #63a63e;
@@ -60,6 +63,12 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+.login-menu a:hover {
+  color: #ee3643;
+}
+.login-menu a:focus {
+  color: #c5c5c5;
+}
 .site-navigation {
   list-style: none;
 
@@ -69,7 +78,16 @@ a {
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
+
   color: #ffffff;
+  background-color: #293449;
+}
+.navigation-item a:hover {
+  background-color: #1d2639;
+}
+.navigation-item a:focus {
+  background-color: #1d2639;
+  opacity: 0.5;
 }
 .promo-option {
   }
@@ -139,6 +157,10 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+}
+.red-button:hover,
+.red-button:focus {
+  background-color: #ca2b36;
 }
 .popular-wrap {
   width: 940px;
@@ -335,6 +357,9 @@ a {
   border: none;
 }
 /*шапка внутрянняя*/
+.user-menu {
+  list-style: none;
+}
 .user-name {
   font-size: 21px;
   font-weight: 400;
@@ -343,13 +368,19 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
-.user-menu a {
+.orders, .account {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
 
   color: #32425c;
+}
+.orders:hover, .account:hover {
+  color: #ee3643;
+}
+.user-menu a:focus {
+  color: #c5c5c5;
 }
 /*страница каталога*/
 .bread-crumbs {
