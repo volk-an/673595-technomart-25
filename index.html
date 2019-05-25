@@ -11,15 +11,15 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="top-menu">
-          <a class="main-logo"><img src="img/svg-technomart/logo-technomart.svg" alt="логотип магазина Техномарт"></a>
-          <input class="search" value="Поиск">
-          <a class="bookmarks" href="#">Закладки:0</a>
-          <a class="cart" href="#">Корзина:0</a>
-          <a class="order-button" href="#">Оформить заказ</a>
+          <a class="top-menu-item main-logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" alt="логотип магазина Техномарт"></a>
+          <input class="top-menu-item search" value="Поиск">
+          <a class="top-menu-item bookmarks" href="#">Закладки:0</a>
+          <a class="top-menu-item cart" href="#">Корзина:0</a>
+          <a class="top-menu-item order-button" href="#">Оформить заказ</a>
         </div>
         <h1 class="site-header">Интернет-магазин строительных материалов и инструментов для дома</h1>
         <div class="contacts">
-          <p class="phone-number">+7(812)555-05-55</p>
+          <a class="phone-number" href="tel:+78125550555">+7(812)555-05-55</a>
           <p class="nav-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         </div>
         <ul class="login-menu">
@@ -34,7 +34,7 @@
             <a href="#">Компания</a>
           </li>
           <li class="navigation-item">
-            <a href="#">Каталог</a>
+            <a href="technomart-catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a href="#">Новости</a>
@@ -78,15 +78,11 @@
           <h3 class="slider-title">Дрели</h3>
           <p class="slider-text">Соседям на радость!</p>
           <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
-          <button aria-label="влево"></button>
-          <button aria-label="вправо"></button>
         </div>
         <div class="slider slider-2">
           <h3 class="slider-title">Перфораторы</h3>
           <p class="slider-text">Настоящие мужские игрушки</p>
           <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
-          <button aria-label="влево"></button>
-          <button aria-label="вправо"></button>
         </div>
       </section>
       <section class="popular-items">
@@ -172,42 +168,42 @@
         <ul class="popular-brands-list">
           <li>
             <a class="brand-item" href="#" aria-label="каталог BOSCH">
-              <img class="brand-logo" src="img/bosch.jpg" width="126" height="37" alt="BOSCH">
+              <img class="brand-logo" src="img/bosch.jpg" alt="BOSCH">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог Makita">
-              <img class="brand-logo" src="img/Makita.jpg" width="123" height="40" alt="Makita">
+              <img class="brand-logo" src="img/Makita.jpg" alt="Makita">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог DeWalt">
-              <img class="brand-logo" src="img/Dewalt.jpg" width="146" height="44" alt="DeWalt">
+              <img class="brand-logo" src="img/Dewalt.jpg" alt="DeWalt">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог Интерскол">
-              <img class="brand-logo" src="img/Interskol.jpg" width="200" height="88" alt="Интерскол">
+              <img class="brand-logo" src="img/Interskol.jpg" alt="Интерскол">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог Hitachi">
-              <img class="brand-logo" src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi">
+              <img class="brand-logo" src="img/Hitachi.jpg" alt="Hitachi">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог LG">
-              <img class="brand-logo" src="img/LG.jpg" width="121" height="73" alt="LG">
+              <img class="brand-logo" src="img/LG.jpg" alt="LG">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог AEG">
-              <img class="brand-logo" src="img/AEG.jpg" width="151" height="96" alt="AEG">
+              <img class="brand-logo" src="img/AEG.jpg" alt="AEG">
             </a>
           </li>
           <li class="popular-brand">
             <a class="brand-item" href="#" aria-label="каталог Metabo">
-              <img class="brand-logo" src="img/Metabo.jpg" width="204" height="69" alt="Metabo">
+              <img class="brand-logo" src="img/Metabo.jpg" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -261,11 +257,12 @@
           <input type="text" name="message" id="message-input" placeholder="В свободной форме">
           <button class="red-button form-send">Отправить</button>
         </form>
+        <button class="feedback-close">X</button>
       </section>
     </main>
     <footer class="main-footer">
       <a class="footer-logo"><img src="img/svg-technomart/logo-technomart.svg" alt="логотип магазина Техномарт"></a>
-      <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>+7(812)555-05-55</p>
+      <p class="footer-contacts">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8<a href="tel:+78125550555">+7(812)555-05-55</a></p>
       <ul class="footer-nav">
         <li>
           <a class="footer-nav-item" href="#">Компания</a>
@@ -274,7 +271,7 @@
           <a class="footer-nav-item" href="#">Новости</a>
         </li>
         <li>
-          <a class="footer-nav-item" href="#">Каталог</a>
+          <a class="footer-nav-item" href="technomart-catalog.html">Каталог</a>
         </li>
         <li>
           <a class="footer-nav-item" href="#">Доставка</a>

@@ -14,12 +14,11 @@ a {
 
 }
 .top-menu {
-  width: 1280px;
-  min-height: 42px;
+
 
   background-color: #293449;
 }
-.top-menu a {
+.top-menu-item {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -27,11 +26,45 @@ a {
   color: #ffffff;
   background-color: #293449;
 }
+.top-menu-item:hover {
+  background-color: #212a3a;
+}
+.top-menu-item:focus {
+  background-color: #161d29;
+}
+.main-logo {
+  background-color: #ee3643;
+}
+.main-logo:hover {
+  background-color: #ca2c37;
+}
+.main-logo:focus {
+  background-color: #ba2732;
+}
+.search {
 
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+}
+.search:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
 a.order-button {
   color: #ffffff;
 
   background-color: #63a63e;
+}
+a.order-button:hover {
+  background-color: #5fbb2d;
+}
+a.order-button:focus{
+  background-color: #518534;
 }
 .site-header {
   font-size: 16px;
@@ -123,8 +156,7 @@ a.order-button {
   text-transform: uppercase;
   color: #ffffff;
 
-  background-color: #000000;
-  opacity: 0.1;
+  background-color: #00000020;
 }
 .slider {
   width: 620px;
@@ -135,9 +167,15 @@ a.order-button {
 }
 .slider-1 {
   background-image: url("../img/drill.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .slider-2 {
   background-image: url("../img/perforator.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .slider-title {
   font-size: 36px;
@@ -220,7 +258,14 @@ a.order-button {
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-radius: 3px;
-
+}
+.add-to-cart:hover {
+  background-color: #5fbb2d;
+  border: 3px solid #5fbb2d;
+}
+.add-to-cart:focus{
+  background-color: #518534;
+  border: 3px solid #518534;
 }
 .add-to-bookmarks {
   width: 135px;
@@ -235,6 +280,13 @@ a.order-button {
   background-color: #ffffff;
   border: 3px solid #63a63e;
   border-radius: 3px;
+}
+.add-to-bookmarks:hover {
+border: 3px solid #32425c;
+}
+.add-to-bookmarks:focus {
+  border: 3px solid #32425c;
+  opacity: 0.3;
 }
 .popular-brands-list {
   list-style: none;
@@ -535,6 +587,9 @@ a.order-button {
   color: #f1f5f7;
   background-color: #32425c;
 }
+.footer-contacts a {
+  color: #f1f5f7;
+}
 .footer-nav {
   list-style: none;
 }
@@ -548,6 +603,16 @@ a.order-button {
 }
 .nav-yellow {
   color: #ffd180;
+}
+.footer-nav-item:hover {
+  text-decoration: underline;
+}
+.nav-yellow:focus {
+  color: #ffd18010;
+}
+.footer-nav-item:focus {
+  color: #f1f5f780;
+  text-decoration: none;
 }
 .footer-bottom {
   font-size: 16px;
@@ -566,4 +631,12 @@ a.order-button {
   font-weight: 400;
   line-height: 18px;
   color: #ffd180;
+}
+.feedback a:hover,
+.developer a:hover {
+  text-decoration: underline;
+}
+.feedback a:focus,
+.developer a:focus {
+color: #ee3643;
 }
