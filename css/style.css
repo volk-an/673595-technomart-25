@@ -49,6 +49,7 @@ a {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+  text-align: center;
 
   color: #ffffff;
   background-color: #293449;
@@ -96,11 +97,14 @@ a.order-button:focus{
 }
 .middlenav-wrap {
   display: flex;
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   width: 940px;
   min-height: 68px;
 }
 .site-header {
+  margin: 0;
+  padding: 5px 52px;
+  width: 220px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -108,13 +112,25 @@ a.order-button:focus{
 
   color: #ee3643;
 }
+.contacts {
+  width: 270px;
+
+}
 .phone-number {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 264px;
+  min-height: 39px;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
   color: #ee3643;
+  border: 3px solid #ffffff;
 }
 .nav-address {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -124,6 +140,8 @@ a.order-button:focus{
   list-style: none;
 }
 .login-menu a {
+  display: block;
+  width:
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -138,15 +156,22 @@ a.order-button:focus{
 }
 .site-navigation {
   display: flex;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
-  width: 940px;
+  padding: 0 25px;
+  width: 890px;
   min-height: 60px;
   list-style: none;
 
   background-color: #293449;
 }
-.navigation-item a {
+.navigation-item {
+  display: block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 20px 30px;
+  width: auto;
+  min-height: 20px;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
@@ -154,10 +179,10 @@ a.order-button:focus{
   color: #ffffff;
   background-color: #293449;
 }
-.navigation-item a:hover {
+.navigation-item:hover {
   background-color: #1d2639;
 }
-.navigation-item a:focus {
+.navigation-item:focus {
   background-color: #1d2639;
   opacity: 0.5;
 }
