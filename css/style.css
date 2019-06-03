@@ -527,11 +527,17 @@ a.red-button {
   align-items: center;
   margin: 0;
   margin-bottom: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 21px;
   width: 220px;
-  min-height: 198px;
+  min-height: 295px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
+}
+.main-catalog-list {
+  margin-bottom: 32px;
+  max-width: 700px;
+  width: 100%;
+  min-height: 990px;
 }
 .catalog-item:hover .item-image {
   display: none;
@@ -673,16 +679,16 @@ border: 3px solid #32425c;
   min-height: 330px;
   list-style: none;
 }
-.popular-brands li {
+.popular-brand {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
   width: 218px;
   height: 143px;
-
+  background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
-.popular-brands li:hover {
+.popular-brand:hover {
   box-shadow: 0 10px 25px #afb3bb;
 }
 .brand-item {
@@ -1049,8 +1055,17 @@ border: 3px solid #32425c;
   margin: 0 auto;
 }
 /*форма*/
+.filters {
+  width:220px;
+  display: flex;
+  flex-direction: column;
+}
 .filters h2 {
-  width: 220px;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 9px 18px;
+  width: 184px;
+  min-height: 20px;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1060,17 +1075,24 @@ border: 3px solid #32425c;
   color: #000000;
   background-color: #f7f3ec;
 }
-.filters fieldset {
+.catalog-filter {
+  display: flex;
+  flex-direction: column;
+}
+.power-filter, .brand-filter, .range-filter {
+
      border: none;
 }
-.filter-name {
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
+.range-filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.range-filter-wrap {
+  width: 220px;
+  min-height: 186px;
+  border-bottom: 2px solid #e5e5e5;
 
-  color: #000000;
 }
 .catalog-filters ul {
   font-family: "PT Sans";
@@ -1082,6 +1104,35 @@ border: 3px solid #32425c;
   list-style: none;
 
   color: #000000;
+}
+.brand-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0px;
+  width:220px;
+  min-height: 262px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.filter-name {
+  margin-top: 15px;
+  padding: 0;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.brand-filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 184px;
+
 }
 .filter-button {
   font-family: "PT Sans";
@@ -1167,30 +1218,29 @@ border: 3px solid #32425c;
 .sort-button-active path {
   fill: #ee3643;
 }
-.main-catalog-list {
-  max-width: 700px;
-  width: 100%;
-  min-height: 994px;
-  
-}
+
 .pagination-list {
   display: flex;
   min-height: 38px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding: 0;
   list-style: none;
 }
 .pagination-item {
-  width: 36px;
-  min-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 37px;
+  min-height: 37px;
   margin-right: 10px;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
@@ -1203,12 +1253,18 @@ border: 3px solid #32425c;
   color: #ffffff;
   background-color: #ee3643;
 }
+.pagination-item:hover {
+  border: 1px solid #bdc6ca;
+}
+.pagination-item:focus {
+  border: 1px solid #ee3643;
+}
 .tools-info {
   margin: 0 auto;
   padding: 63px 130px;
-  max-width: 930px;
+  max-width: 940px;
   width: 100%;
-  min-height: 140px;
+  min-height: 135px;
   color: #000000;
   background-color: #f2f6f8;
 }
