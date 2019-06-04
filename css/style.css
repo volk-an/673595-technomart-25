@@ -1121,6 +1121,7 @@ border: 3px solid #32425c;
   border-bottom: 2px solid #e5e5e5;
 }
 .filter-name {
+  margin: 0;
   margin-bottom: 15px;
   padding: 0;
   font-family: "PT Sans";
@@ -1134,14 +1135,83 @@ border: 3px solid #32425c;
 .brand-filter-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  min-height: 170px;
+}
+.filter-option {
+  margin-bottom: 15px;
+}
+.filter-option label {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+.filter-input-checkbox::before {
+  content: "";
+
+  position: absolute;
+  left: -40px;
+  top: 0;
+
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/svg-technomart/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*brand-filter-list li::before:checked {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/svg-technomart/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}*/
+.power-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0px;
+  width: 220px;
+  min-height: 60px;
+}
+.power-filter-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  min-height: 178px;
+  min-height: 30px;
+}
+.power-filter-list li::before {
+  content: "";
 
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/svg-technomart/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .filter-button {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
