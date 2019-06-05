@@ -250,15 +250,25 @@
       <section class="modal feedback-modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form">
-          <label for="name-input">Ваше имя:</label>
-          <input type="text" name="name" id="name-input" placeholder="Имя Фамилия">
-          <label for="email-input">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-input" placeholder="email@example.com">
-          <label for="message-input">Текст письма:</label>
-          <input type="text" name="message" id="message-input" placeholder="В свободной форме">
-          <button class="red-button form-send">Отправить</button>
+          <div class="feedback-form-wrap">
+            <p class="user-data-wrap">
+              <label for="name-input">Ваше имя:</label>
+              <input class="user-data" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
+            </p>
+            <p class="user-data-wrap">
+              <label for="email-input">Ваш e-mail:</label>
+              <input class="user-data" type="email" name="email" id="email-input" placeholder="email@example.com">
+            </p>
+            <p class="user-message-wrap">
+              <label for="message-input">Текст письма:</label>
+              <input class="user-message" type="text" name="message" id="message-input" placeholder="В свободной форме">
+            </p>
+          </div>
+          <div class="gray-wrap">
+            <button class="red-button form-send">Отправить</button>
+          </div>
         </form>
-        <button class="feedback-close">X</button>
+        <button class="feedback-close"></button>
       </section>
     </main>
     <footer class="main-footer">
