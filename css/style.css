@@ -935,6 +935,7 @@ border: 3px solid #32425c;
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 46px;
+  margin-bottom: 34px;
   width: 460px;
   min-height: 229px;
 }
@@ -943,22 +944,17 @@ border: 3px solid #32425c;
   flex-direction: column;
 
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding: 0;
   width: 220px;
   min-height: 60px;
-  outline: 1px solid red;
-
-}
+  }
 .user-message-wrap {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   width: 460px;
-
-  outline: 1px solid red;
-
 }
 .feedback-form label {
   margin: 0;
@@ -991,11 +987,16 @@ border: 3px solid #32425c;
   min-height: 112px;
 }
 .gray-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 620px;
   min-height: 112px;
   background-color: #f4f4f4;
 }
 .form-send {
+  text-align: center;
+  vertical-align: middle;
   width: 460px;
   min-height: 38px;
   border: none;
@@ -1004,7 +1005,7 @@ border: 3px solid #32425c;
   position: absolute;
   width:21px;
   height: 21px;
-  top: 16px;
+  top: 10px;
   right: 9px;
   border:none;
   background-color: transparent;
@@ -1252,20 +1253,6 @@ border: 3px solid #32425c;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/*brand-filter-list li::before:checked {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/svg-technomart/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
 .power-filter {
   display: flex;
   flex-direction: column;
@@ -1669,4 +1656,44 @@ margin-bottom: 32px;
 .feedback a:focus,
 .developer a:focus {
 color: #ee3643;
+}
+/*инф. окно*/
+.cart-info {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
+  min-height: 275px;
+  background-color: #ffffff;
+  background-image: url("../img/modal-checkmark.png");
+  background-repeat: no-repeat;
+  background-position: 81px 48px;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+}
+.cart-info b {
+  margin: 70px 125px 60px 179px;
+
+}
+.cart-info-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 112px;
+  background-color: #f1f1f1;
+}
+.button-modal {
+  width: 200px;
+}
+.white-button {
+  margin-left: 20px;
+  padding: 10px;
+  width: 220px;
+  min-height: 16px;
+  text-align: center;
+  background-color: #ffffff;
 }
