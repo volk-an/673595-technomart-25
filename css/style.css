@@ -833,6 +833,7 @@ border: 3px solid #32425c;
   background-position: right bottom;
 }
 .technomart-info {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 130px;
@@ -919,6 +920,9 @@ border: 3px solid #32425c;
 }
 .contact-button {
   width: 280px;
+}
+.modal {
+  display: block;
 }
 .feedback-modal {
   display: block;
@@ -1703,7 +1707,6 @@ color: #ee3643;
   background-position: 81px 48px;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   border-top: 7px solid #ee3643;
-  display: none;
 }
 .cart-info b {
   margin: 70px 125px 60px 179px;
@@ -1728,3 +1731,7 @@ color: #ee3643;
   text-align: center;
   background-color: #ffffff;
 }
+.modal-map {
+  position: absolute;
+  left: 10px;
+  right: 0;
