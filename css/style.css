@@ -554,7 +554,7 @@ a.red-button {
 .catalog-item-header {
   margin: 0;
   padding: 0;
-  width: 155px;
+  width: 160px;
 
   padding: 10px 15px;
   font-family: "PT Sans";
@@ -592,6 +592,7 @@ a.red-button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  border-radius: 2px;
 }
 .new-price::after {
   position: absolute;
@@ -930,7 +931,7 @@ border: 3px solid #32425c;
   background-color: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
-  display: none;
+
 }
 .feedback-form-wrap {
   display: flex;
@@ -1228,7 +1229,7 @@ border: 3px solid #32425c;
   padding-left: 35px;
   min-height: 23px;
 }
-.checkbox-option::before {
+.filter-input-checkbox + .checkbox-option::before {
   content: "";
 
   position: absolute;
@@ -1261,6 +1262,12 @@ border: 3px solid #32425c;
 .checkbox-option:hover::before,
 .filter-input-checkbox:hover + .checkbox-option::after {
   opacity: 1;
+}
+
+.filter-input-checkbox:disabled + .checkbox-option::before,
+.filter-input-checkbox:disabled + .checkbox-option::after,
+.filter-input-checkbox:disabled + .checkbox-option {
+  opacity: 0.4;
 }
 .power-filter {
   display: flex;
@@ -1314,6 +1321,11 @@ border: 3px solid #32425c;
 .filter-input-radio:hover + .radio-option::after {
   opacity: 1;
 }
+.filter-input-radio:disabled + .radio-option::before,
+.filter-input-radio:disabled + .radio-option::after,
+.filter-input-radio:disabled + .radio-option {
+  opacity: 0.4;
+}
 .filter-button {
   margin: 0;
   padding: 10px 2px;
@@ -1328,6 +1340,9 @@ border: 3px solid #32425c;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+}
+.filter-button:hover, .filter-button:active {
+  border: 1px solid #bdc6ca;
 }
 .catalog {
   display: flex;
@@ -1699,7 +1714,7 @@ color: #ee3643;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 112px;
+  min-height: 115px;
   background-color: #f1f1f1;
 }
 .button-modal {
