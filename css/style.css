@@ -1001,7 +1001,7 @@ border: 3px solid #32425c;
   min-height: 38px;
   border: none;
 }
-.feedback-close {
+.button-close {
   position: absolute;
   width:21px;
   height: 21px;
@@ -1692,7 +1692,7 @@ color: #ee3643;
 .white-button {
   margin-left: 20px;
   padding: 10px;
-  width: 220px;
+
   min-height: 16px;
   text-align: center;
   background-color: #ffffff;
