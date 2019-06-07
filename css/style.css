@@ -493,10 +493,10 @@ a.red-button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 0 24px;
+  padding: 26px 24px;
   max-width: 892px;
   width: 100%;
-  min-height: 89px;
+  min-height: 27px;
   background-color: #f9f5f0;
 }
 .popular-header {
@@ -728,7 +728,7 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 70px;
   padding: 2px;
-  width: 396px;
+  width: 400px;
   min-height: 45px;
   font-family: "PT Sans";
   font-size: 13px;
@@ -842,6 +842,9 @@ border: 3px solid #32425c;
   min-height: 458px;
 }
 .about-info {
+  margin: 0;
+  margin-right: 120px;
+  padding: 0;
   max-width: 520px;
   width: 100%;
 
@@ -1034,12 +1037,20 @@ border: 3px solid #32425c;
   width: 300px;
   list-style: none;
 }
-.user-name {
-  display: block;
+.user-menu li:first-child {
+  display: flex;
   margin: 0;
-  padding: 12px 59px 12px 47px;
+  padding: 12px 0 12px 0;
   width: 193px;
   min-height: 21px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+.user-name {
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -1123,10 +1134,10 @@ border: 3px solid #32425c;
   align-items: center;
   margin: 0 130px;
   margin-bottom: 20px;
-  padding: 0 24px;
+  padding: 26px 24px;
   max-width: 892px;
   width: 100%;
-  min-height: 89px;
+  min-height: 37px;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1436,9 +1447,9 @@ border: 3px solid #32425c;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
-  width: 37px;
-  min-height: 37px;
+  padding: 10px;
+  width: 17px;
+  min-height: 17px;
   margin-right: 10px;
   font-family: "PT Sans";
   font-size: 13px;
@@ -1451,7 +1462,7 @@ border: 3px solid #32425c;
   border-radius: 3px;
 }
 .next {
-  width: 138px;
+  width: 118px;
 }
 .pagination-current {
   color: #ffffff;
@@ -1552,6 +1563,7 @@ border: 3px solid #32425c;
 .footer-contacts {
   margin: 0;
   padding: 0;
+  width: 320px;
 }
 .footer-contacts a {
   display: inline-block;
@@ -1735,3 +1747,13 @@ color: #ee3643;
   position: absolute;
   left: 10px;
   right: 0;
+  width: 940px;
+  min-height: 447px;
+}
+.map-close {
+  right: 22px;
+  top: 20px;
+}
+.modal {
+  display: none;
+}
