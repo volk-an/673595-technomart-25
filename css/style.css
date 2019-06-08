@@ -401,13 +401,13 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  background-color: #00000020;
+  background-color: rgba(0,0,0,.2);
 }
 .promo-button:hover {
-  background-color: #00000030;
+  background-color:rgba(0,0,0,.3);
 }
 .promo-button:active {
-  background-color: #00000050;
+  background-color: rgba(0,0,0,.5);
 }
 .promo-wrap {
   display: flex;
@@ -998,6 +998,7 @@ border: 3px solid #32425c;
 .user-message {
   width: 440px;
   min-height: 112px;
+  resize: vertical;
 }
 .gray-wrap {
   display: flex;
@@ -1025,6 +1026,7 @@ border: 3px solid #32425c;
   background-image: url("../img/svg-technomart/icon-close.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
+  cursor: pointer;
 }
 /*шапка внутрянняя*/
 .cart-full {
@@ -1865,5 +1867,5 @@ color: #ee3643;
   top: 20px;
 }
 .modal {
-  display: none;
+  /*display: none;*/
 }
