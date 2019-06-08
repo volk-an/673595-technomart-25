@@ -163,7 +163,7 @@ a {
 }
 .middlenav-wrap {
   display: flex;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   width: 940px;
   min-height: 81px;
 }
@@ -321,7 +321,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 130px;
   margin-bottom: 52px;
   max-width: 940px;
   width: 100%;
@@ -726,7 +726,7 @@ border: 3px solid #32425c;
 }
 .service-text {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   padding: 2px;
   width: 400px;
   min-height: 45px;
@@ -739,7 +739,7 @@ border: 3px solid #32425c;
 }
 .service-wrap {
   display: flex;
-  min-height: 286px;
+  min-height: 284px;
 }
 .service-list {
   position: relative;
@@ -791,6 +791,8 @@ border: 3px solid #32425c;
 .service-slide {
   max-width: 624px;
   width: 100%;
+  min-height: 284px;
+
 }
 .service-name {
   margin: 0;
@@ -1032,7 +1034,9 @@ border: 3px solid #32425c;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 51px;
+  margin-bottom: 15px;
+  min-height: 30px;
   padding: 0;
   width: 300px;
   list-style: none;
@@ -1040,9 +1044,20 @@ border: 3px solid #32425c;
 .user-menu li:first-child {
   display: flex;
   margin: 0;
-  padding: 12px 0 12px 0;
-  width: 193px;
-  min-height: 21px;
+  margin-bottom: 7px;
+  padding: 11px 12px;
+  width: 275px;
+  min-height: 22px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+.user-name {
+  display: block;
+  margin: 0;
+  margin-left: 14px;
+  margin-right: 32px;
+  padding: 0;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -1050,13 +1065,13 @@ border: 3px solid #32425c;
   color: #000000;
   background-color: #ffffff;
 }
-.user-name {
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 21px;
-
-  color: #000000;
-  background-color: #ffffff;
+.user-icon:hover path,
+.logout:hover path {
+  fill: #32425c;
+}
+.user-icon:active path,
+.logout:active path {
+  fill: #c5c5c5;
 }
 .orders,
 .account {
@@ -1071,6 +1086,20 @@ border: 3px solid #32425c;
   text-decoration: underline;
 
   color: #32425c;
+}
+.orders {
+  position: relative;
+}
+.orders::after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+
 }
 .orders:hover, .account:hover {
   color: #ee3643;
@@ -1161,7 +1190,7 @@ border: 3px solid #32425c;
 }
 .filters h2 {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   padding: 9px 18px;
   width: 184px;
   min-height: 20px;
@@ -1184,15 +1213,95 @@ border: 3px solid #32425c;
 }
 .range-filter {
   display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-}
-.range-filter-wrap {
   width: 220px;
-  min-height: 186px;
+  min-height: 195px;
   border-bottom: 2px solid #e5e5e5;
+}
+.price-scale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
+  width: 220px;
+  min-height: 80px;
 
+  background-color: #f7f3ec;
+}
+.scale-bar {
+  position: relative;
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+.scale-bar-small {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+.scale-bar::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  box-shadow:  0 1px 0 #b1b1b1;
+}
+.scale-bar::after {
+  position: absolute;
+  content: "";
+  left: 142px;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  box-shadow:  0 1px 0 #b1b1b1;
+}
+.price-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  min-height: 38px;
+}
+.min-price,
+.max-price {
+  margin: 0;
+  padding: 0;
+  width: 95px;
+  min-height: 38px;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  background-color: #f7f3ec;
+  border: none;
+}
+.min-price {
+  margin-right: 30px;
+}
+.price-wrap::after {
+  position: absolute;
+  content: "";
+  left: 105px;
+  top: 20px;
+  width: 10px;
+  height: 1px;
+  background-color: #000000;
 }
 .catalog-filters ul {
   font-family: "PT Sans";
@@ -1347,9 +1456,10 @@ border: 3px solid #32425c;
   width: 140px;
   min-height: 18px;
   font-family: "PT Sans";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
 
   color: #000000;
   background-color: #ffffff;
