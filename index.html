@@ -238,27 +238,41 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="about-button red-button" href="#">Подробнее о компании</a>
+          <a class=" red-button about-button" href="#">Подробнее о компании</a>
         </section>
         <section class="contacts-info">
           <h3 class="contacts-header">Контакты</h3>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <img class="map" src="img/map.jpg" width="300" height="158" alt="фрагмент карты">
           <a href="#" class="contact-button red-button">Заблудились? Напишите нам</a>
+          <section class="modal modal-map">
+            <img class="map=popup" src="img/map_popup.jpg" alt="Техномарт на карте" width=940 height="447">
+            <button class="button-close map-close"></button>
+          </section>
         </section>
       </section>
       <section class="modal feedback-modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form">
-          <label for="name-input">Ваше имя:</label>
-          <input type="text" name="name" id="name-input" placeholder="Имя Фамилия">
-          <label for="email-input">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-input" placeholder="email@example.com">
-          <label for="message-input">Текст письма:</label>
-          <input type="text" name="message" id="message-input" placeholder="В свободной форме">
-          <button class="red-button form-send">Отправить</button>
-        </form>
-        <button class="feedback-close">X</button>
+          <div class="feedback-form-wrap">
+              <p class="user-data-wrap">
+                <label for="name-input">Ваше имя:</label>
+                <input class="user-data" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
+              </p>
+              <p class="user-data-wrap">
+                <label for="email-input">Ваш e-mail:</label>
+                <input class="user-data" type="email" name="email" id="email-input" placeholder="email@example.com">
+              </p>
+              <p class="user-message-wrap">
+                <label for="message-input">Текст письма:</label>
+                <textarea class="user-message" name="message" id="message-input" placeholder="В свободной форме"></textarea>
+              </p>
+            </div>
+            <div class="gray-wrap">
+              <button class="red-button form-send">Отправить</button>
+            </div>
+          </form>
+          <button class="button-close"></button>
       </section>
     </main>
     <footer class="main-footer">

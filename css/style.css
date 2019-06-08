@@ -163,7 +163,7 @@ a {
 }
 .middlenav-wrap {
   display: flex;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   width: 940px;
   min-height: 81px;
 }
@@ -281,11 +281,11 @@ a {
   padding: 0 22px;
   max-width: 896px;
   width: 100%;
-  min-height: 60px;
+  min-height: 55px;
   list-style: none;
 
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 #293449;
+  border-bottom: 5px solid #293449;
 }
 .navigation-item {
   display: block;
@@ -305,7 +305,7 @@ a {
 .navigation-item:hover {
   background-color: #293449;
 }
-.navigation-item:focus {
+.navigation-item:active {
   background-color: #1d2739;
   box-shadow: inset 0 -5px 0 #1d2739;
   opacity: 0.5;
@@ -321,7 +321,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 130px;
   margin-bottom: 52px;
   max-width: 940px;
   width: 100%;
@@ -401,13 +401,13 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  background-color: #00000020;
+  background-color: rgba(0,0,0,.2);
 }
 .promo-button:hover {
-  background-color: #00000030;
+  background-color:rgba(0,0,0,.3);
 }
 .promo-button:active {
-  background-color: #00000050;
+  background-color: rgba(0,0,0,.5);
 }
 .promo-wrap {
   display: flex;
@@ -493,10 +493,10 @@ a.red-button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 0 24px;
+  padding: 26px 24px;
   max-width: 892px;
   width: 100%;
-  min-height: 89px;
+  min-height: 27px;
   background-color: #f9f5f0;
 }
 .popular-header {
@@ -527,8 +527,8 @@ a.red-button {
   align-items: center;
   margin: 0;
   margin-bottom: 20px;
-  padding-bottom: 21px;
-  width: 220px;
+  padding: 0 10px 21px 10px;
+  width: 200px;
   min-height: 295px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
@@ -553,6 +553,8 @@ a.red-button {
 }
 .catalog-item-header {
   margin: 0;
+  padding: 0;
+  width: 160px;
 
   padding: 10px 15px;
   font-family: "PT Sans";
@@ -590,6 +592,7 @@ a.red-button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  border-radius: 2px;
 }
 .new-price::after {
   position: absolute;
@@ -723,9 +726,9 @@ border: 3px solid #32425c;
 }
 .service-text {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   padding: 2px;
-  width: 396px;
+  width: 400px;
   min-height: 45px;
   font-family: "PT Sans";
   font-size: 13px;
@@ -736,7 +739,7 @@ border: 3px solid #32425c;
 }
 .service-wrap {
   display: flex;
-  min-height: 286px;
+  min-height: 284px;
 }
 .service-list {
   position: relative;
@@ -788,6 +791,8 @@ border: 3px solid #32425c;
 .service-slide {
   max-width: 624px;
   width: 100%;
+  min-height: 284px;
+
 }
 .service-name {
   margin: 0;
@@ -830,6 +835,7 @@ border: 3px solid #32425c;
   background-position: right bottom;
 }
 .technomart-info {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 0 130px;
@@ -838,6 +844,9 @@ border: 3px solid #32425c;
   min-height: 458px;
 }
 .about-info {
+  margin: 0;
+  margin-right: 120px;
+  padding: 0;
   max-width: 520px;
   width: 100%;
 
@@ -917,25 +926,107 @@ border: 3px solid #32425c;
 .contact-button {
   width: 280px;
 }
+.modal {
+  display: block;
+}
 .feedback-modal {
-  display: none;
+  display: block;
+  position: fixed;
+  width: 620px;
+  min-height: 423px;
+  top: 100px;
+  left:50%;
+  margin-left: -310px;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5357;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+
+}
+.feedback-form-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 34px;
+  width: 460px;
+  min-height: 229px;
+}
+.user-data-wrap {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 220px;
+  min-height: 60px;
+  }
+.user-message-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 460px;
 }
 .feedback-form label {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   color: #000000;
 }
 .feedback-form input {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
 
   color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  background-color: #ffffff;
+}
+.user-data {
+  width: 200px;
+  min-height: 34px;
+}
+.user-message {
+  width: 440px;
+  min-height: 112px;
+  resize: vertical;
+}
+.gray-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  min-height: 112px;
+  background-color: #f4f4f4;
 }
 .form-send {
+  text-align: center;
+  vertical-align: middle;
+  width: 460px;
+  min-height: 38px;
   border: none;
+}
+.button-close {
+  position: absolute;
+  width:21px;
+  height: 21px;
+  top: 10px;
+  right: 9px;
+  border:none;
+  background-color: transparent;
+  background-image: url("../img/svg-technomart/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  cursor: pointer;
 }
 /*шапка внутрянняя*/
 .cart-full {
@@ -945,23 +1036,44 @@ border: 3px solid #32425c;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: 50px;
+  margin-left: 51px;
+  margin-bottom: 15px;
+  min-height: 30px;
   padding: 0;
   width: 300px;
   list-style: none;
 }
+.user-menu li:first-child {
+  display: flex;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 11px 12px;
+  width: 275px;
+  min-height: 22px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
 .user-name {
   display: block;
   margin: 0;
-  padding: 12px 59px 12px 47px;
-  width: 193px;
-  min-height: 21px;
+  margin-left: 14px;
+  margin-right: 32px;
+  padding: 0;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
 
   color: #000000;
   background-color: #ffffff;
+}
+.user-icon:hover path,
+.logout:hover path {
+  fill: #32425c;
+}
+.user-icon:active path,
+.logout:active path {
+  fill: #c5c5c5;
 }
 .orders,
 .account {
@@ -976,6 +1088,20 @@ border: 3px solid #32425c;
   text-decoration: underline;
 
   color: #32425c;
+}
+.orders {
+  position: relative;
+}
+.orders::after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+
 }
 .orders:hover, .account:hover {
   color: #ee3643;
@@ -1039,10 +1165,10 @@ border: 3px solid #32425c;
   align-items: center;
   margin: 0 130px;
   margin-bottom: 20px;
-  padding: 0 24px;
+  padding: 26px 24px;
   max-width: 892px;
   width: 100%;
-  min-height: 89px;
+  min-height: 37px;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1066,7 +1192,7 @@ border: 3px solid #32425c;
 }
 .filters h2 {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   padding: 9px 18px;
   width: 184px;
   min-height: 20px;
@@ -1089,15 +1215,95 @@ border: 3px solid #32425c;
 }
 .range-filter {
   display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-}
-.range-filter-wrap {
   width: 220px;
-  min-height: 186px;
+  min-height: 195px;
   border-bottom: 2px solid #e5e5e5;
+}
+.price-scale {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9px;
+  width: 220px;
+  min-height: 80px;
 
+  background-color: #f7f3ec;
+}
+.scale-bar {
+  position: relative;
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+.scale-bar-small {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+.scale-bar::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  box-shadow:  0 1px 0 #b1b1b1;
+}
+.scale-bar::after {
+  position: absolute;
+  content: "";
+  left: 142px;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  box-shadow:  0 1px 0 #b1b1b1;
+}
+.price-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  min-height: 38px;
+}
+.min-price,
+.max-price {
+  margin: 0;
+  padding: 0;
+  width: 95px;
+  min-height: 38px;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  background-color: #f7f3ec;
+  border: none;
+}
+.min-price {
+  margin-right: 30px;
+}
+.price-wrap::after {
+  position: absolute;
+  content: "";
+  left: 105px;
+  top: 20px;
+  width: 10px;
+  height: 1px;
+  background-color: #000000;
 }
 .catalog-filters ul {
   font-family: "PT Sans";
@@ -1149,7 +1355,7 @@ border: 3px solid #32425c;
   padding-left: 35px;
   min-height: 23px;
 }
-.checkbox-option::before {
+.filter-input-checkbox + .checkbox-option::before {
   content: "";
 
   position: absolute;
@@ -1162,6 +1368,7 @@ border: 3px solid #32425c;
   background-image: url("../img/svg-technomart/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
 }
 .filter-input-checkbox:checked + .checkbox-option::after {
   content: "";
@@ -1176,21 +1383,18 @@ border: 3px solid #32425c;
   background-image: url("../img/svg-technomart/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
 }
-/*brand-filter-list li::before:checked {
-  content: "";
+.checkbox-option:hover::before,
+.filter-input-checkbox:hover + .checkbox-option::after {
+  opacity: 1;
+}
 
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/svg-technomart/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
+.filter-input-checkbox:disabled + .checkbox-option::before,
+.filter-input-checkbox:disabled + .checkbox-option::after,
+.filter-input-checkbox:disabled + .checkbox-option {
+  opacity: 0.4;
+}
 .power-filter {
   display: flex;
   flex-direction: column;
@@ -1222,6 +1426,7 @@ border: 3px solid #32425c;
   background-image: url("../img/svg-technomart/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
 }
 .filter-input-radio:checked + .radio-option::after {
   content: "";
@@ -1236,6 +1441,16 @@ border: 3px solid #32425c;
   background-image: url("../img/svg-technomart/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.6;
+}
+.radio-option:hover::before,
+.filter-input-radio:hover + .radio-option::after {
+  opacity: 1;
+}
+.filter-input-radio:disabled + .radio-option::before,
+.filter-input-radio:disabled + .radio-option::after,
+.filter-input-radio:disabled + .radio-option {
+  opacity: 0.4;
 }
 .filter-button {
   margin: 0;
@@ -1243,14 +1458,18 @@ border: 3px solid #32425c;
   width: 140px;
   min-height: 18px;
   font-family: "PT Sans";
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
 
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+}
+.filter-button:hover, .filter-button:active {
+  border: 1px solid #bdc6ca;
 }
 .catalog {
   display: flex;
@@ -1340,9 +1559,9 @@ border: 3px solid #32425c;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
-  width: 37px;
-  min-height: 37px;
+  padding: 10px;
+  width: 17px;
+  min-height: 17px;
   margin-right: 10px;
   font-family: "PT Sans";
   font-size: 13px;
@@ -1355,7 +1574,7 @@ border: 3px solid #32425c;
   border-radius: 3px;
 }
 .next {
-  width: 138px;
+  width: 118px;
 }
 .pagination-current {
   color: #ffffff;
@@ -1456,6 +1675,7 @@ border: 3px solid #32425c;
 .footer-contacts {
   margin: 0;
   padding: 0;
+  width: 320px;
 }
 .footer-contacts a {
   display: inline-block;
@@ -1594,4 +1814,58 @@ margin-bottom: 32px;
 .feedback a:focus,
 .developer a:focus {
 color: #ee3643;
+}
+/*инф. окно*/
+.cart-info {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 200px;
+  left: 50%;
+  margin-left: -310px;
+  width: 620px;
+  min-height: 275px;
+  background-color: #ffffff;
+  background-image: url("../img/modal-checkmark.png");
+  background-repeat: no-repeat;
+  background-position: 81px 48px;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+}
+.cart-info b {
+  margin: 70px 125px 60px 179px;
+
+}
+.cart-info-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 115px;
+  background-color: #f1f1f1;
+}
+.button-modal {
+  width: 200px;
+}
+.white-button {
+  margin-left: 20px;
+  padding: 10px;
+
+  min-height: 16px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.modal-map {
+  position: absolute;
+  left: 10px;
+  right: 0;
+  width: 940px;
+  min-height: 447px;
+}
+.map-close {
+  right: 22px;
+  top: 20px;
+}
+.modal {
+  /*display: none;*/
 }
