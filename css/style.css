@@ -1867,5 +1867,8 @@ color: #ee3643;
   top: 20px;
 }
 .modal {
-  /*display: none;*/
+  display: none;
+}
+.modal-show {
+  display: block;
 }
