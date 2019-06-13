@@ -11,10 +11,6 @@ body {
 a {
   text-decoration: none;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 .visually-hidden {
   position: absolute;
   margin: -1px;
@@ -48,13 +44,11 @@ img {
   max-width: 1200px;
   width: 100%;
   min-height: 47px;
-
   background-color: #293449;
   box-shadow: inset 0 -5px 0 #f4f7f9;
 }
 .top-menu-item {
   padding: 11px 0;
-
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -75,13 +69,13 @@ img {
 .main-logo {
   padding: 12px 55px;
   width: 110px;
-
   background-color: #ee3643;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 .main-logo:hover {
   background-color: #ca2c37;
 }
+
 .main-logo:focus {
   background-color: #ba2732;
 }
@@ -90,15 +84,14 @@ img {
   padding: 0;
   padding-left: 50px;
   width: 220px;
-
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-
   background-image: url("../img/icon-search-gray.png");
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 17px;
+
   border: none;
 }
 .search::placeholder {
@@ -106,7 +99,6 @@ img {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
-
   color: #ffffff;
 }
 .search:focus{
@@ -171,7 +163,7 @@ img {
 }
 .middlenav-wrap {
   display: flex;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   width: 940px;
   min-height: 81px;
 }
@@ -180,7 +172,6 @@ img {
   margin-right: 26px;
   padding: 2px 53px;
   width: 190px;
-
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -199,11 +190,9 @@ img {
   padding-left: 71px;
   width: 183px;
   min-height: 21px;
-
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
-
   color: #ee3643;
   border: 3px solid #ffffff;
 }
@@ -224,11 +213,9 @@ img {
 .nav-address {
   margin: 0;
   padding: 2px 7px;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-
   color: #32425c;
 }
 .login-menu {
@@ -238,20 +225,17 @@ img {
   margin-left: 70px;
   padding: 0;
   width: 282px;
-
   list-style: none;
 }
 .login,
 .registration {
   display: block;
-  padding: 10px;
   min-height: 25px;
-
+  padding: 10px;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-
   color: #000000;
   background-color: #ffffff;
 }
@@ -298,7 +282,6 @@ img {
   max-width: 896px;
   width: 100%;
   min-height: 55px;
-
   list-style: none;
 
   background-color: #32425c;
@@ -311,7 +294,6 @@ img {
   padding: 20px 30px 17px;
   width: auto;
   min-height: 18px;
-
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
@@ -331,9 +313,9 @@ img {
 /* main*/
 .main-page {
   margin: 0 auto;
-  padding-top: 59px;
   max-width: 1200px;
   width: 100%;
+  padding-top: 59px;
 }
 .promo {
   display: flex;
@@ -357,13 +339,10 @@ img {
 .new::before {
   content: "";
   position: absolute;
-
   top: 0px;
   right: 0px;
-
   width: 60px;
   height: 60px;
-
   background-image: url("../img/svg-technomart/new-flag.svg");
   background-repeat: no-repeat;
 }
@@ -392,6 +371,7 @@ img {
   background-position: 196px center;
 }
 .delivery {
+  margin-bottom: 0;
   background-color: #ffbf47;
   background-image: url("../img/svg-technomart/icon-5.svg");
   background-repeat: no-repeat;
@@ -401,7 +381,6 @@ img {
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -420,9 +399,8 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  text-align: center;
-
   color: #ffffff;
+  text-align: center;
   background-color: rgba(0,0,0,.2);
 }
 .promo-button:hover {
@@ -438,13 +416,6 @@ img {
   order: 2;
 }
 .slider {
-  max-width: 620px;
-  width: 100%;
-  min-height: 266px;
-
-  background-color: #685b52
-}
-.slider-1 {
   display: flex;
   flex-direction: column;
   padding: 23px;
@@ -453,22 +424,15 @@ img {
   min-height: 220px;
 
   color: #ffffff;
-  background-color: #685b52;
+  background-color: #685b52
+}
+.slider-1 {
   background-image: url("../img/drill.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slider-2 {
-  display: flex;
-  flex-direction: column;
-  padding: 23px;
-  max-width: 574px;
-  width: 100%;
-  min-height: 220px;
-
-  color: #ffffff;
-  background-color: #685b52;
   display: none;
   background-image: url("../img/perforator.png");
   background-repeat: no-repeat;
@@ -478,7 +442,6 @@ img {
 .slider-title {
   margin: 0;
   padding: 0;
-
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -486,9 +449,7 @@ img {
 }
 .slider-text {
   margin: 0;
-  margin-bottom: 122px;
   padding: 0;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -496,8 +457,7 @@ img {
 .red-button {
   margin: 0;
   padding: 10px;
-  min-height: 18px;
-
+  min-height: 16px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -516,7 +476,6 @@ img {
 }
 a.red-button {
   display: inline-block;
-  vertical-align: middle;
 }
 .slider-button {
   margin: 0;
@@ -538,17 +497,14 @@ a.red-button {
   max-width: 892px;
   width: 100%;
   min-height: 27px;
-
   background-color: #f9f5f0;
 }
 .popular-header {
   margin: 0;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-
   color: #32425c;
 }
 .popular-button {
@@ -563,7 +519,6 @@ a.red-button {
   max-width: 940px;
   width: 100%;
   min-height: 338px;
-
   list-style: none;
 }
 .catalog-item {
@@ -575,7 +530,6 @@ a.red-button {
   padding: 0 10px 21px 10px;
   width: 200px;
   min-height: 295px;
-
   border: 1px solid #eaeaea;
   background-color: #ffffff;
 }
@@ -600,9 +554,9 @@ a.red-button {
 .catalog-item-header {
   margin: 0;
   padding: 0;
-  padding: 10px 15px;
   width: 160px;
 
+  padding: 10px 15px;
   font-family: "PT Sans";
   font-size: 18px;
   font-weight: 700;
@@ -612,8 +566,8 @@ a.red-button {
 }
 .old-price {
   margin: 0;
-  padding: 0;
 
+  padding: 0;
   font-family: "PT Sans";
   font-size: 17px;
   font-weight: 700;
@@ -621,7 +575,6 @@ a.red-button {
   text-align: center;
   text-decoration: line-through;
   text-transform: uppercase;
-
   color: #a9a9a9;
 }
 .new-price {
@@ -631,14 +584,12 @@ a.red-button {
   padding: 10px;
   width: 120px;
   min-height: 16px;
-
   font-family: "PT Sans";
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 2px;
@@ -646,10 +597,8 @@ a.red-button {
 .new-price::after {
   position: absolute;
   content: "";
-
   top: 0px;
   right: -19px;
-
   background-color: #ffffff;
   border: 19px solid transparent;	border-left: 19px solid #ee3643;
 }
@@ -663,7 +612,6 @@ a.red-button {
   margin-bottom: 8px;
   width: 135px;
   min-height: 38px;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -732,7 +680,6 @@ border: 3px solid #32425c;
   max-width: 940px;
   width: 100%;
   min-height: 330px;
-
   list-style: none;
 }
 .popular-brand {
@@ -741,7 +688,6 @@ border: 3px solid #32425c;
   padding: 0;
   width: 218px;
   height: 143px;
-
   background-color: #ffffff;
   border: 1px solid #eaeaea;
 }
@@ -760,19 +706,17 @@ border: 3px solid #32425c;
   align-items: center;
 }
 .service {
-  margin-bottom: 78px;
+  margin-bottom: 76px;
   padding: 65px 130px 0;
   max-width: 940px;
   width: 100%;
   min-height: 333px;
-
   background-color: #f4f8f9;
 }
 .service-header {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -782,11 +726,10 @@ border: 3px solid #32425c;
 }
 .service-text {
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 67px;
   padding: 2px;
   width: 400px;
   min-height: 45px;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -805,19 +748,15 @@ border: 3px solid #32425c;
   padding: 0;
   width: 240px;
   min-height: 200px;
-
   list-style: none;
 }
 .service-list::before {
   position: absolute;
   content: "";
-
   width: 10px;
   height: 279px;
-
   top: -40px;
   right: 0;
-
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
 
@@ -827,7 +766,6 @@ border: 3px solid #32425c;
   padding: 0 20px;
   width: 240px;
   min-height: 62px;
-
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -842,8 +780,6 @@ border: 3px solid #32425c;
   background-color: #293449;
 }
 .service-item-current {
-  display: block;
-
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -862,7 +798,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -874,8 +809,7 @@ border: 3px solid #32425c;
 .service-info {
   margin: 0;
   padding: 0;
-  width: 379px;
-
+  width: 275px;
   font-size: 13px;
   font-family: "PT Sans";
   font-weight: 400;
@@ -884,32 +818,21 @@ border: 3px solid #32425c;
   color: #000000;
 }
 .delivery-slide {
-  display: none;
-
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 .guarantee-slide {
   display: none;
-
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 .credit-slide {
   display: none;
-
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-}
-.request {
-  width: 195px;
-  margin-top: 30px;
-}
-.slide-show {
-  display: block;
 }
 .technomart-info {
   position: relative;
@@ -918,7 +841,7 @@ border: 3px solid #32425c;
   margin: 0 130px;
   max-width: 940px;
   width: 100%;
-  min-height: 456px;
+  min-height: 458px;
 }
 .about-info {
   margin: 0;
@@ -936,7 +859,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 26px;
   padding: 0;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -948,7 +870,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -960,7 +881,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
-
   list-style: none;
 }
 .carrier-list li {
@@ -969,7 +889,6 @@ border: 3px solid #32425c;
   margin-bottom: 20px;
   padding: 0;
   padding-left: 38px;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -979,18 +898,14 @@ border: 3px solid #32425c;
 .carrier-list li::before {
   position: absolute;
   content: "";
-
   top: 7px;
   left: 0px;
-
   width: 28px;
   height: 3px;
-
   background-color: #ee3643;
 }
 .about-button {
   width: 200px;
-
   text-align: center;
 }
 .contacts-text {
@@ -998,7 +913,6 @@ border: 3px solid #32425c;
   margin-bottom: 32px;
   padding: 0;
   width: 180px;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1007,14 +921,8 @@ border: 3px solid #32425c;
   color: #000000;
 }
 .map {
-  display: block;
-  width: 300px;
-  height: 158px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
-
 .contact-button {
   width: 280px;
 }
@@ -1029,10 +937,10 @@ border: 3px solid #32425c;
   top: 100px;
   left:50%;
   margin-left: -310px;
-
   background-color: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+
 }
 .feedback-form-wrap {
   display: flex;
@@ -1047,12 +955,13 @@ border: 3px solid #32425c;
 .user-data-wrap {
   display: flex;
   flex-direction: column;
+
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
   width: 220px;
   min-height: 60px;
-}
+  }
 .user-message-wrap {
   display: flex;
   flex-direction: column;
@@ -1064,7 +973,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -1074,7 +982,6 @@ border: 3px solid #32425c;
   margin: 0;
   padding: 0;
   padding-left: 16px;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1099,7 +1006,6 @@ border: 3px solid #32425c;
   align-items: center;
   width: 620px;
   min-height: 112px;
-
   background-color: #f4f4f4;
 }
 .form-send {
@@ -1107,7 +1013,6 @@ border: 3px solid #32425c;
   vertical-align: middle;
   width: 460px;
   min-height: 38px;
-
   border: none;
 }
 .button-close {
@@ -1116,7 +1021,6 @@ border: 3px solid #32425c;
   height: 21px;
   top: 10px;
   right: 9px;
-
   border:none;
   background-color: transparent;
   background-image: url("../img/svg-technomart/icon-close.svg");
@@ -1134,10 +1038,9 @@ border: 3px solid #32425c;
   margin: 0;
   margin-left: 51px;
   margin-bottom: 15px;
-  width: 300px;
   min-height: 30px;
   padding: 0;
-
+  width: 300px;
   list-style: none;
 }
 .user-menu li:first-child {
@@ -1157,7 +1060,6 @@ border: 3px solid #32425c;
   margin-left: 14px;
   margin-right: 32px;
   padding: 0;
-
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -1180,7 +1082,6 @@ border: 3px solid #32425c;
   padding: 0;
   padding-left: 20px;
   padding-right: 10px;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1194,13 +1095,10 @@ border: 3px solid #32425c;
 .orders::after {
   position: absolute;
   content: "";
-
   right: -10px;
   top: 8px;
-
   width: 4px;
   height: 4px;
-
   background-color: #32425c;
   border-radius: 50%;
 
@@ -1224,7 +1122,6 @@ border: 3px solid #32425c;
   min-height: 20px;
   margin: 0;
   padding: 20px 130px;
-
   list-style: none;
 }
 .bread-crumbs li {
@@ -1232,13 +1129,11 @@ border: 3px solid #32425c;
   margin: 0;
   margin-right: 40px;
   padding: 0;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
   color: #000000;
 }
 .bread-crumbs a {
@@ -1248,13 +1143,10 @@ border: 3px solid #32425c;
 .bread-crumbs li:not(:last-child)::after {
   position: absolute;
   content:"";
-
   width: 6px;
   height: 6px;
-
   top: 5px;
   right: -23px;
-
   border-top: 1px solid #c1c6ce;
   border-right: 1px solid #c1c6ce;
   transform: rotate(45deg);
@@ -1263,7 +1155,6 @@ border: 3px solid #32425c;
 .bread-crumbs li:first-child {
   width:15px;
   height: 14px;
-
   background-image: url(../img/svg-technomart/icon-home.svg);
   background-repeat: no-repeat;
   background-position: left center;
@@ -1278,7 +1169,6 @@ border: 3px solid #32425c;
   max-width: 892px;
   width: 100%;
   min-height: 37px;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1290,16 +1180,15 @@ border: 3px solid #32425c;
 .inner-wrap {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   max-width: 940px;
   width: 100%;
+  margin: 0 auto;
 }
 /*форма*/
 .filters {
+  width:220px;
   display: flex;
   flex-direction: column;
-
-  width:220px;
 }
 .filters h2 {
   margin: 0;
@@ -1307,7 +1196,6 @@ border: 3px solid #32425c;
   padding: 9px 18px;
   width: 184px;
   min-height: 20px;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1322,7 +1210,8 @@ border: 3px solid #32425c;
   flex-direction: column;
 }
 .power-filter, .brand-filter, .range-filter {
-  border: none;
+
+     border: none;
 }
 .range-filter {
   display: flex;
@@ -1332,7 +1221,6 @@ border: 3px solid #32425c;
   padding: 0;
   width: 220px;
   min-height: 195px;
-
   border-bottom: 2px solid #e5e5e5;
 }
 .price-scale {
@@ -1349,25 +1237,20 @@ border: 3px solid #32425c;
   position: relative;
   width: 180px;
   height: 2px;
-
   background-color: #d7dcde;
 }
 .scale-bar-small {
   width: 152px;
   height: 2px;
-
   background-color: #00ca74;
 }
 .scale-bar::before {
   position: absolute;
   content: "";
-
   left: 0;
   top: -10px;
-
   width: 4px;
   height: 4px;
-
   border: 8px solid #ffffff;
   background-color: #b1b1b1;
   border-radius: 50%;
@@ -1376,13 +1259,10 @@ border: 3px solid #32425c;
 .scale-bar::after {
   position: absolute;
   content: "";
-
   left: 142px;
   top: -10px;
-
   width: 4px;
   height: 4px;
-
   border: 8px solid #ffffff;
   background-color: #b1b1b1;
   border-radius: 50%;
@@ -1403,14 +1283,12 @@ border: 3px solid #32425c;
   padding: 0;
   width: 95px;
   min-height: 38px;
-
   font-family: "PT Sans";
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-
   color: #000000;
   background-color: #f7f3ec;
   border: none;
@@ -1421,13 +1299,10 @@ border: 3px solid #32425c;
 .price-wrap::after {
   position: absolute;
   content: "";
-
   left: 105px;
   top: 20px;
-
   width: 10px;
   height: 1px;
-
   background-color: #000000;
 }
 .catalog-filters ul {
@@ -1449,14 +1324,12 @@ border: 3px solid #32425c;
   padding: 0px;
   width:220px;
   min-height: 246px;
-
   border-bottom: 2px solid #e5e5e5;
 }
 .filter-name {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-
   font-family: "PT Sans";
   font-size: 17px;
   font-weight: 700;
@@ -1469,8 +1342,7 @@ border: 3px solid #32425c;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0;
-  padding: 0;
+  margin: 0;  padding: 0;
   min-height: 170px;
 }
 .brand-filter-list li, .power-filter-list li {
@@ -1585,7 +1457,6 @@ border: 3px solid #32425c;
   padding: 10px 2px;
   width: 140px;
   min-height: 18px;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1615,22 +1486,19 @@ border: 3px solid #32425c;
   max-width: 666px;
   width: 100%;
   min-height: 38px;
-
   background-color: #f7f3ec;
 }
 .sort-list {
   display: flex;
   justify-content: space-between;
+  width:354px;
   margin: 0;
   padding: 0;
-  width:354px;
-
   list-style: none;
 }
 .sort-item {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1649,14 +1517,12 @@ border: 3px solid #32425c;
   margin: 0;
   padding: 0;
   width: 176px;
-
+  color: #000000;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
-  color: #000000;
 }
 .sort-item-current {
   color: #ee3643;
@@ -1686,7 +1552,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 58px;
   padding: 0;
-
   list-style: none;
 }
 .pagination-item {
@@ -1694,17 +1559,15 @@ border: 3px solid #32425c;
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-right: 10px;
   padding: 10px;
   width: 17px;
   min-height: 17px;
-
+  margin-right: 10px;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
@@ -1729,7 +1592,6 @@ border: 3px solid #32425c;
   max-width: 940px;
   width: 100%;
   min-height: 135px;
-
   color: #000000;
   background-color: #f2f6f8;
 }
@@ -1737,7 +1599,6 @@ border: 3px solid #32425c;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1746,7 +1607,6 @@ border: 3px solid #32425c;
 .tools-info p {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
@@ -1757,7 +1617,6 @@ border: 3px solid #32425c;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-
   color: #000000;
 }
 .cart-info-buttons {
@@ -1768,20 +1627,19 @@ border: 3px solid #32425c;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+
   text-transform: uppercase;
 }
 .white-button {
   color: #000000;
   background-color: #ffffff;
 }
-
 /*футер*/
 .main-footer {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
   min-height: 300px;
-
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1796,7 +1654,6 @@ border: 3px solid #32425c;
   max-width: 940px;
   width: 100%;
   min-height: 193px;
-
   background-color: #32425c;
 }
 .footer-wrap {
@@ -1812,7 +1669,6 @@ border: 3px solid #32425c;
   width: 138px;
   height: 28px;
   text-align: center;
-
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
@@ -1825,8 +1681,6 @@ border: 3px solid #32425c;
   display: inline-block;
   margin: 0;
   padding: 0;
-  vertical-align: middle;
-
   color: #f1f5f7;
 }
 .footer-nav {
@@ -1839,18 +1693,16 @@ border: 3px solid #32425c;
   padding-top: 38px;
   max-width: 620px;
   width: 100%;
-
   list-style: none;
 }
 .footer-nav li {
-  margin-left: 60px;
-  margin-bottom: 32px;
+margin-left: 60px;
+margin-bottom: 32px;
   }
 .footer-nav-item {
   margin: 0;
   padding: 0;
   display: inline-block;
-  vertical-align: middle;
 
   font-size: 18px;
   font-weight: 400;
@@ -1879,7 +1731,6 @@ border: 3px solid #32425c;
   max-width: 940px;
   width: 100%;
   min-height: 72px;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1896,13 +1747,12 @@ border: 3px solid #32425c;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 132px;
+  min-height: 45px;
   margin: 0;
   margin-left: 161px;
   margin-right: 120px;
   padding: 0;
-  width: 132px;
-  min-height: 45px;
-
   list-style: none;
 }
 .social-button {
@@ -1911,7 +1761,6 @@ border: 3px solid #32425c;
   padding: 0;
   width: 42px;
   height: 42px;
-
   border-radius: 42px;
   background-color: #212a3a;
 }
@@ -1953,11 +1802,9 @@ border: 3px solid #32425c;
 .developer a {
   margin: 0;
   padding: 0;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-
   color: #ffd180;
 }
 .feedback a:hover,
@@ -1969,7 +1816,7 @@ border: 3px solid #32425c;
 color: #ee3643;
 }
 /*инф. окно*/
-.info-wrap {
+.cart-info {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1978,7 +1825,6 @@ color: #ee3643;
   margin-left: -310px;
   width: 620px;
   min-height: 275px;
-
   background-color: #ffffff;
   background-image: url("../img/modal-checkmark.png");
   background-repeat: no-repeat;
@@ -1986,7 +1832,7 @@ color: #ee3643;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   border-top: 7px solid #ee3643;
 }
-.info-wrap b {
+.cart-info b {
   margin: 70px 125px 60px 179px;
 
 }
@@ -1996,7 +1842,6 @@ color: #ee3643;
   align-items: center;
   width: 100%;
   min-height: 115px;
-
   background-color: #f1f1f1;
 }
 .button-modal {
@@ -2005,82 +1850,22 @@ color: #ee3643;
 .white-button {
   margin-left: 20px;
   padding: 10px;
-  min-height: 16px;
 
+  min-height: 16px;
   text-align: center;
   background-color: #ffffff;
 }
 .modal-map {
-  position: fixed;
-  left: 50%;
-  top: 100px;
-  margin-left: -470px;
+  position: absolute;
+  left: 10px;
+  right: 0;
   width: 940px;
   min-height: 447px;
-  
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-}
-.modal-map iframe {
-  position: relative;
-  z-index: 2;
-
-  border: none;
-}
-.map-popup {
-  position: relative;
-  z-index: 1;
 }
 .map-close {
-  z-index: 3;
   right: 22px;
   top: 20px;
 }
 .modal {
-  display: none;
+  /*display: none;*/
 }
-.modal-show {
-  display: block;
-  animation: bounce 0.3s;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-  25% {
-    transform: translateY(-75px);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  75% {
-    transform: translateY(-25px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.modal-error {
-  animation-name: shake;
-  animation-duration: 1s;
-}
-  @keyframes shake {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      transform: translateX(-20px);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-      transform: translateX(20px);
-    }
-  }
