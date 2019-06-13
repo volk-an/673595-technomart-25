@@ -78,15 +78,17 @@
             <a class="promo-button" href="#">Бесплатно</a>
           </div>
         </div>
-        <div class="slider slider-1">
-          <h3 class="slider-title">Дрели</h3>
-          <p class="slider-text">Соседям на радость!</p>
-          <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
-        </div>
-        <div class="slider slider-2">
-          <h3 class="slider-title">Перфораторы</h3>
-          <p class="slider-text">Настоящие мужские игрушки</p>
-          <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
+        <div class="slider">
+          <div class="slider-1">
+            <h3 class="slider-title">Дрели</h3>
+            <p class="slider-text">Соседям на радость!</p>
+            <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
+          </div>
+          <div class="slider-2">
+            <h3 class="slider-title">Перфораторы</h3>
+            <p class="slider-text">Настоящие мужские игрушки</p>
+            <a class="slider-button red-button" href="technomart-catalog.html">Открыть каталог</a>
+          </div>
         </div>
       </section>
       <section class="popular-items">
@@ -209,21 +211,22 @@
         <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="service-wrap">
           <ul class="service-list">
-            <li><button class="service-item service-item-current">Доставка</button></li>
-            <li><button class="service-item">Гарантия</button></li>
-            <li><button class="service-item">Кредит</button></li>
+            <li><button class="service-item service-item-current delivery-btn">Доставка</button></li>
+            <li><button class="service-item guarantee-btn">Гарантия</button></li>
+            <li><button class="service-item credit-btn">Кредит</button></li>
           </ul>
-          <section  class="service-slide delivery-slide">
+          <section  class="service-slide delivery-slide slide-show">
             <h3 class="service-name">Доставка</h3>
-            <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            <p class="service-info">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
           </section>
           <section  class="service-slide guarantee-slide">
             <h3 class="service-name">Гарантия</h3>
-            <p class="service-info">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            <p class="service-info">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
           </section>
           <section  class="service-slide credit-slide">
             <h3 class="service-name">Кредит</h3>
-            <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <p class="service-info">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+            <a class="request red-button">отправить заявку</a>
           </section>
         </div>
       </section>
@@ -243,10 +246,16 @@
         <section class="contacts-info">
           <h3 class="contacts-header">Контакты</h3>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img class="map" src="img/map.jpg" width="300" height="158" alt="фрагмент карты">
+          <a class="map" href="#">
+            <img src="img/map.jpg" width="300" height="158" alt="фрагмент карты">
+          </a>
           <a href="#" class="contact-button red-button">Заблудились? Напишите нам</a>
           <section class="modal modal-map">
-            <img class="map=popup" src="img/map_popup.jpg" alt="Техномарт на карте" width=940 height="447">
+            <h2 class="visually-hidden">Техномарт на карте</h2>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412367!2d30.320894615677194!3d59.93879686904843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560341373768!5m2!1sru!2sru" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+            --><div class="map-popup">
+              <img src="img/map_popup.jpg" alt="Техномарт на карте" width=940 height="447">
+            </div>
             <button class="button-close map-close"></button>
           </section>
         </section>
@@ -257,11 +266,11 @@
           <div class="feedback-form-wrap">
               <p class="user-data-wrap">
                 <label for="name-input">Ваше имя:</label>
-                <input class="user-data" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
+                <input class="user-data modal-user-name" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
               </p>
               <p class="user-data-wrap">
                 <label for="email-input">Ваш e-mail:</label>
-                <input class="user-data" type="email" name="email" id="email-input" placeholder="email@example.com">
+                <input class="user-data user-email" type="email" name="email" id="email-input" placeholder="email@example.com">
               </p>
               <p class="user-message-wrap">
                 <label for="message-input">Текст письма:</label>
@@ -330,5 +339,18 @@
         </div>
       </div>
     </footer>
+    <section class="modal info-popup">
+      <div class="info-wrap">
+      <h2 class="visually-hidden">Информационное окно</h2>
+      <b>Товар добавлен в корзину!</b>
+      <div class="cart-info-buttons">
+        <a class="button-modal red-button" href="#">Оформить заказ</a>
+        <a class="button-modal white-button" href="#">Продолжить покупки</a>
+      </div>
+      <button class="button-close info-button-close"></button>
+    </div>
+    </section>
+    <script src="js/scriptindex.js">
+    </script>
   </body>
 </html>

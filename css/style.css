@@ -416,6 +416,14 @@ a {
   order: 2;
 }
 .slider {
+
+  max-width: 620px;
+  width: 100%;
+  min-height: 266px;
+
+  background-color: #685b52
+}
+.slider-1 {
   display: flex;
   flex-direction: column;
   padding: 23px;
@@ -424,15 +432,22 @@ a {
   min-height: 220px;
 
   color: #ffffff;
-  background-color: #685b52
-}
-.slider-1 {
+  background-color: #685b52;
   background-image: url("../img/drill.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .slider-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  max-width: 574px;
+  width: 100%;
+  min-height: 220px;
+
+  color: #ffffff;
+  background-color: #685b52;
   display: none;
   background-image: url("../img/perforator.png");
   background-repeat: no-repeat;
@@ -449,6 +464,7 @@ a {
 }
 .slider-text {
   margin: 0;
+  margin-bottom: 122px;
   padding: 0;
   font-size: 18px;
   font-weight: 400;
@@ -780,6 +796,7 @@ border: 3px solid #32425c;
   background-color: #293449;
 }
 .service-item-current {
+  display: block;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -809,7 +826,7 @@ border: 3px solid #32425c;
 .service-info {
   margin: 0;
   padding: 0;
-  width: 275px;
+  width: 379px;
   font-size: 13px;
   font-family: "PT Sans";
   font-weight: 400;
@@ -818,6 +835,7 @@ border: 3px solid #32425c;
   color: #000000;
 }
 .delivery-slide {
+  display: none;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -833,6 +851,13 @@ border: 3px solid #32425c;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+}
+.request {
+  width: 195px;
+  margin-top: 30px;
+}
+.slide-show {
+  display: block;
 }
 .technomart-info {
   position: relative;
@@ -921,8 +946,14 @@ border: 3px solid #32425c;
   color: #000000;
 }
 .map {
+  display: block;
+  width: 300px;
+  height: 158px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 36px;
 }
+
 .contact-button {
   width: 280px;
 }
@@ -1634,6 +1665,7 @@ border: 3px solid #32425c;
   color: #000000;
   background-color: #ffffff;
 }
+
 /*футер*/
 .main-footer {
   margin: 0 auto;
@@ -1816,7 +1848,7 @@ margin-bottom: 32px;
 color: #ee3643;
 }
 /*инф. окно*/
-.cart-info {
+.info-wrap {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1832,7 +1864,7 @@ color: #ee3643;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   border-top: 7px solid #ee3643;
 }
-.cart-info b {
+.info-wrap b {
   margin: 70px 125px 60px 179px;
 
 }
@@ -1856,13 +1888,26 @@ color: #ee3643;
   background-color: #ffffff;
 }
 .modal-map {
-  position: absolute;
-  left: 10px;
-  right: 0;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  margin-left: -470px;
   width: 940px;
   min-height: 447px;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+.map-popup {
+  position: relative;
+  z-index: 1;
 }
 .map-close {
+  z-index: 3;
   right: 22px;
   top: 20px;
 }
@@ -1871,4 +1916,47 @@ color: #ee3643;
 }
 .modal-show {
   display: block;
+  animation: bounce 0.3s;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  25% {
+    transform: translateY(-75px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.modal-error {
+  animation-name: shake;
+  animation-duration: 1s;
+}
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-20px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translateX(20px);
+    }
+  }
