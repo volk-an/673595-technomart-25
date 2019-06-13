@@ -440,7 +440,7 @@ img {
 .slider {
   max-width: 620px;
   width: 100%;
-  min-height: 266px;
+  min-height: 220px;
 
   background-color: #685b52
 }
@@ -2017,7 +2017,7 @@ color: #ee3643;
   margin-left: -470px;
   width: 940px;
   min-height: 447px;
-  
+
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 .modal-map iframe {
