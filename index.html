@@ -5,14 +5,16 @@
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <div class="top-menu">
           <a class="top-menu-item main-logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" width=109 height=19 alt="логотип магазина Техномарт"></a>
-          <input class="top-menu-item search" placeholder="Поиск:">
+          <form class="search-form top-menu-item" method="get" action="https://echo.htmlacademy.ru">
+            <input class="search" placeholder="Поиск:">
+          </form>
           <a class="top-menu-item bookmarks" href="#">Закладки: 0</a>
           <a class="top-menu-item cart" href="#">Корзина: 0</a>
           <a class="top-menu-item order-button" href="#">Оформить заказ</a>
@@ -206,30 +208,32 @@
           </li>
         </ul>
       </section>
-      <section class="service">
-        <h2 class="service-header">Сервисы</h2>
-        <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="service-wrap">
-          <ul class="service-list">
-            <li><button class="service-item service-item-current delivery-btn">Доставка</button></li>
-            <li><button class="service-item guarantee-btn">Гарантия</button></li>
-            <li><button class="service-item credit-btn">Кредит</button></li>
-          </ul>
-          <section  class="service-slide delivery-slide slide-show">
-            <h3 class="service-name">Доставка</h3>
-            <p class="service-info">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-          </section>
-          <section  class="service-slide guarantee-slide">
-            <h3 class="service-name">Гарантия</h3>
-            <p class="service-info">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
-          </section>
-          <section  class="service-slide credit-slide">
-            <h3 class="service-name">Кредит</h3>
-            <p class="service-info">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
-            <a class="request red-button">отправить заявку</a>
-          </section>
-        </div>
-      </section>
+      <div class="service-container">
+        <section class="service">
+          <h2 class="service-header">Сервисы</h2>
+          <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-wrap">
+            <ul class="service-list">
+              <li><button class="service-item service-item-current delivery-btn">Доставка</button></li>
+              <li><button class="service-item guarantee-btn">Гарантия</button></li>
+              <li><button class="service-item credit-btn">Кредит</button></li>
+            </ul>
+            <section  class="service-slide delivery-slide slide-show">
+              <h3 class="service-name">Доставка</h3>
+              <p class="service-info">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </section>
+            <section  class="service-slide guarantee-slide">
+              <h3 class="service-name">Гарантия</h3>
+              <p class="service-info">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+            </section>
+            <section  class="service-slide credit-slide">
+              <h3 class="service-name">Кредит</h3>
+              <p class="service-info">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+              <a class="request red-button">отправить заявку</a>
+            </section>
+          </div>
+        </section>
+      </div>
       <section class="technomart-info">
         <h2 class="visually-hidden">Информация о магазине</h2>
         <section class="about-info">
@@ -252,7 +256,7 @@
           <a href="#" class="contact-button red-button">Заблудились? Напишите нам</a>
           <section class="modal modal-map">
             <h2 class="visually-hidden">Техномарт на карте</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412367!2d30.320894615677194!3d59.93879686904843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560341373768!5m2!1sru!2sru" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412367!2d30.320894615677194!3d59.93879686904843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560341373768!5m2!1sru!2sru" width="920" height="437" style="border:0" allowfullscreen></iframe>
             <div class="map-popup">
               <img src="img/map_popup.jpg" alt="Техномарт на карте" width=940 height="447">
             </div>
@@ -264,24 +268,24 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form">
           <div class="feedback-form-wrap">
-              <p class="user-data-wrap">
-                <label for="name-input">Ваше имя:</label>
-                <input class="user-data modal-user-name" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
-              </p>
-              <p class="user-data-wrap">
-                <label for="email-input">Ваш e-mail:</label>
-                <input class="user-data user-email" type="email" name="email" id="email-input" placeholder="email@example.com">
-              </p>
-              <p class="user-message-wrap">
-                <label for="message-input">Текст письма:</label>
-                <textarea class="user-message" name="message" id="message-input" placeholder="В свободной форме"></textarea>
-              </p>
-            </div>
-            <div class="gray-wrap">
-              <button class="red-button form-send">Отправить</button>
-            </div>
-          </form>
-          <button class="button-close feedback-button-close"></button>
+            <p class="user-data-wrap">
+              <label for="name-input">Ваше имя:</label>
+              <input class="user-data modal-user-name" type="text" name="name" id="name-input" placeholder="Имя Фамилия">
+            </p>
+            <p class="user-data-wrap">
+              <label for="email-input">Ваш e-mail:</label>
+              <input class="user-data user-email" type="email" name="email" id="email-input" placeholder="email@example.com">
+            </p>
+            <p class="user-message-wrap">
+              <label for="message-input">Текст письма:</label>
+              <textarea class="user-message" name="message" id="message-input" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <div class="gray-wrap">
+            <button class="red-button form-send">Отправить</button>
+          </div>
+        </form>
+        <button class="button-close feedback-button-close"></button>
       </section>
     </main>
     <footer class="main-footer">
@@ -321,21 +325,23 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-        <ul class="footer-social">
-          <li class="social-button social-button-vk">
-            <a href="#" aria-label="Техномарт Вконтакте"></a>
-          </li>
-          <li class="social-button social-button-fb">
-            <a href="#" aria-label="Техномарт В Фейсбуке"></a>
-          </li>
-          <li class="social-button social-button-insta">
-            <a href="#" aria-label="Техномарт в Инстаграме"></a>
-          </li>
-        </ul>
-        <div class="bottom-wrap">
-          <p class="feedback"><span>Обратная связь:</span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="developer"><span>Разработано-</span><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+        <div class="footer-bottom-container">
+          <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+          <ul class="footer-social">
+            <li class="social-button social-button-vk">
+              <a href="#" aria-label="Техномарт Вконтакте"></a>
+            </li>
+            <li class="social-button social-button-fb">
+              <a href="#" aria-label="Техномарт В Фейсбуке"></a>
+            </li>
+            <li class="social-button social-button-insta">
+              <a href="#" aria-label="Техномарт в Инстаграме"></a>
+            </li>
+          </ul>
+          <div class="bottom-wrap">
+            <p class="feedback"><span>Обратная связь:</span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="developer"><span>Разработано-</span><a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy.ru">htmlacademy.ru</a></p>
+          </div>
         </div>
       </div>
     </footer>
@@ -350,7 +356,6 @@
       <button class="button-close info-button-close"></button>
     </div>
     </section>
-    <script src="js/scriptindex.js">
-    </script>
+    <script src="js/scriptindex.js"></script>
   </body>
 </html>
