@@ -90,9 +90,13 @@ img {
   background-color: #ba2732;
 }
 .main-logo:hover {
+  background-color: #ee3643;
+}
+.inner-logo:hover {
   background-color: #ca2c37;
 }
-.main-logo:focus {
+.inner-logo:focus,
+.inner-logo:active {
   background-color: #ba2732;
 }
 .search-form {
@@ -145,7 +149,7 @@ img {
   width: 14px;
   height: 16px;
 
-  background-image: url("../img/svg-technomart/icon-bookmark.svg");
+  background-image: url("../img/icon-bookmark.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -333,7 +337,8 @@ img {
   color: #ffffff;
   background-color: #32425c;
 }
-.navigation-item:hover {
+.navigation-item:hover,
+.navigation-item:focus {
   background-color: #293449;
 }
 .navigation-item:active {
@@ -477,11 +482,11 @@ img {
   background-position: center;
 }
 .slider-1 {
-  background-image: url("../img/drill.png");
+  background-image: url("../img/drill.jpg");
 }
 .slider-2 {
   display: none;
-  background-image: url("../img/perforator.png");
+  background-image: url("../img/perforator.jpg");
 }
 .slider-title {
   margin: 0;
@@ -668,14 +673,18 @@ a.red-button {
 }
 .add-to-cart {
   position: relative;
+  display: block;
   margin-bottom: 8px;
-  width: 135px;
-  min-height: 38px;
+  padding: 7px;
+  width: 114px;
+  min-height: 18px;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
 
   color: #ffffff;
   background-color: #63a63e;
@@ -717,6 +726,7 @@ a.red-button {
   background-color: #ffffff;
   border: 3px solid #63a63e;
   border-radius: 3px;
+  cursor: pointer;
 }
 .add-to-bookmarks:hover {
 border: 3px solid #32425c;
@@ -850,6 +860,8 @@ border: 3px solid #32425c;
   color: #ffffff;
   background-color: #32425c;
   border: none;
+
+  cursor: pointer;
 }
 .service-item:hover {
   color: #ffffff;
@@ -919,6 +931,7 @@ border: 3px solid #32425c;
 .request {
   width: 195px;
   margin-top: 30px;
+  cursor: pointer;
 }
 .slide-show {
   display: block;
@@ -1191,6 +1204,10 @@ border: 3px solid #32425c;
 .logout:active path {
   fill: #c5c5c5;
 }
+.user-icon:focus path,
+.logout:focus path {
+  fill: #32425c;
+}
 .orders,
 .account {
   display: block;
@@ -1357,7 +1374,7 @@ border: 3px solid #32425c;
   border-bottom: 2px solid #e5e5e5;
 }
 .price-scale {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 9px;
@@ -1504,6 +1521,7 @@ border: 3px solid #32425c;
   position: relative;
   padding-left: 35px;
   min-height: 23px;
+  cursor: pointer;
 }
 .filter-input-checkbox + .checkbox-option::before {
   content: "";
@@ -1618,6 +1636,8 @@ border: 3px solid #32425c;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+
+  cursor: pointer;
 }
 .filter-button:hover, .filter-button:active {
   border: 1px solid #bdc6ca;
@@ -1680,8 +1700,9 @@ border: 3px solid #32425c;
 
   color: #000000;
 }
-.sort-item-current {
+.sort-item-current, .sort-item-current:hover {
   color: #ee3643;
+  border-bottom: none;
   opacity: 1;
 }
 .wrap-buttons {

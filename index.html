@@ -12,9 +12,10 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="top-menu">
-          <a class="top-menu-item main-logo" href="index.html"><img src="img/svg-technomart/logo-technomart.svg" width=109 height=19 alt="логотип магазина Техномарт"></a>
+          <a class="top-menu-item main-logo"><img src="img/svg-technomart/logo-technomart.svg" width=109 height=19 alt="логотип магазина Техномарт"></a>
           <form class="search-form top-menu-item" method="get" action="https://echo.htmlacademy.ru">
-            <input class="search" placeholder="Поиск:">
+            <input class="search" id="search-input" placeholder="Поиск:">
+            <label for="search-input" class="visually-hidden">Поиск</label>
           </form>
           <a class="top-menu-item bookmarks" href="#">Закладки: 0</a>
           <a class="top-menu-item cart" href="#">Корзина: 0</a>
@@ -102,7 +103,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="item-buttons">
-              <button class="add-to-cart">Купить</button>
+              <a class="add-to-cart" href="#">Купить</a>
               <button class="add-to-bookmarks">В закладки</button>
             </div>
             <div class="item-image" style="width: 218px;
@@ -117,7 +118,7 @@
           </li>
           <li class="catalog-item">
             <div class="item-buttons">
-              <button class="add-to-cart">Купить</button>
+              <a class="add-to-cart" href="#">Купить</a>
               <button class="add-to-bookmarks">В закладки</button>
             </div>
             <div class="item-image" style="width: 218px;
@@ -132,7 +133,7 @@
           </li>
           <li class="catalog-item">
             <div class="item-buttons">
-              <button class="add-to-cart">Купить</button>
+              <a class="add-to-cart" href="#">Купить</a>
               <button class="add-to-bookmarks">В закладки</button>
             </div>
             <div class="item-image" style="width: 218px;
@@ -147,7 +148,7 @@
           </li>
           <li class="catalog-item new">
             <div class="item-buttons">
-              <button class="add-to-cart">Купить</button>
+              <a class="add-to-cart" href="#">Купить</a>
               <button class="add-to-bookmarks">В закладки</button>
             </div>
             <div class="item-image" style="width: 218px;
@@ -357,6 +358,6 @@
       <button class="button-close info-button-close"></button>
     </div>
     </section>
-    <script src="js/scriptindex.js"></script>
+    <script src="js/min-scriptindex.js"></script>
   </body>
 </html>
